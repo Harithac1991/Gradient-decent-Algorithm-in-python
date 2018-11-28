@@ -4,7 +4,6 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 
 
@@ -75,7 +74,7 @@ def y2indicator(y):
     return ind
 
 
-def benchmark_full():
+def Fun_GradientDecent():
     Xtrain, Xtest, Ytrain, Ytest = get_normalized_data()
 
     print("Performing logistic regression...")
@@ -126,5 +125,5 @@ def benchmark_full():
 
 
 if __name__ == '__main__':
-    benchmark_full()
+    Fun_GradientDecent()
 
